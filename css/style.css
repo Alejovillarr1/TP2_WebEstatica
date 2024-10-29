@@ -1,3 +1,6 @@
+.fondo{
+    background-image: url('/imagenes/dressuniquelgoo.png');
+}
 .container {
     display: grid;
     grid-template-areas: "head head head"
