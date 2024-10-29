@@ -76,6 +76,12 @@ transition: transform 0.3s ease;
         display: inline-block;
         transform: scale(1.05);
     }
+    .imagenes_ropa{
+        display: inline-block;
+    transition: transform 0.3s ease;
+    height: max-content;
+        width: max-content;
+    }
 .imagenes_ropa{
     box-shadow: 10px 10px 20px rgba(2, 12, 104, 0.5);
 }
@@ -108,11 +114,15 @@ transition: transform 0.3s ease;
     color: white;
 }
 .carrito :hover{
-    transform: sacale(1.08);
+    transform: scale(1.08);
 
 }
 .selecionar_zona :hover{
     transform: scale(1.10);
+}
+.titulo_marca{
+    display: inline-block;
+    transition: transform 0.3 ease;
 }
 .titulo_marca :hover{
     transform: scale(1.10);
