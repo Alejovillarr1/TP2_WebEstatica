@@ -1,23 +1,7 @@
-.container {
-    display: grid;
-    grid-template-areas: "head head head"
-                         "imagenes_ropa imagenes_ropa imagenes_ropa"
-                         "foot foot foot";
-  
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 200px 100px;
-  }
-  
-  .item-1 { grid-area: head; background: blue; }
-  .item-2 { grid-area: menu; background: red; }
-  .item-3 { grid-area: main; background: green; }
-  .item-4 { grid-area: foot; background: orange; }
-  
-
 
 
 .barra_arriba {
-    background-color: black;
+    background-color: #050404;
     border: 1px solid #050404;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -29,20 +13,53 @@
     max-width: 100%;
     height: auto;
 }
+.carrito{
+    a {
+        color: rgb(0, 0, 0);
+        text-decoration: none; 
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+        margin-left: 6px;
+      }
+    a:visited {
+        color: rgb(0, 0, 0); 
+      }
+      .carrito {
+        margin: 0;
+        padding: 0;
+        display: flex; /* Alinea el contenido para evitar espacio adicional */
+        align-items: center; /* Centra verticalmente si es necesario */
+        justify-content: center; /* Centra horizontalmente si es necesario */
+    }   
+      
+}
+
+.boton-carro{
+    background-color: #050404;
+    height: 50px;
+    width: 50px;
+} 
 
 .titulo_marca {
     margin: auto;
     text-align: center;
     font-size: x-large;
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 6px rgb(255, 255, 255);
+    a {
+        color: rgb(255, 254, 254);
+        text-decoration: none; 
+        text-shadow: 2px 2px 5px white;
+      }
+  
+      
+      a:visited {
+        color: rgb(255, 255, 255); 
+      }
 }
 
 .imagenes_ropa {
-    border: 5px solid rgb(0, 0, 0);
-    width: 90%;
-    margin: 0 auto;
+    border: 2px solid rgb(0, 0, 0);
+    width: 50%;
+    margin: auto;
     max-width: 1200px;
 }
 
@@ -76,8 +93,7 @@ transition: transform 0.3s ease;
         display: inline-block;
         transform: scale(1.05);
     }
-    .imagenes_ropa{
-        display: inline-block;
+.imagenes_ropa{
     transition: transform 0.3s ease;
     height: max-content;
         width: max-content;
