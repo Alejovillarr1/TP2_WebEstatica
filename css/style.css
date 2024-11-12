@@ -1,8 +1,8 @@
 
 
 .barra_arriba {
-    background-color: #050404;
-    border: 1px solid #050404;
+    background-color: #000000;
+    border: 1px solid #000000;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
@@ -26,13 +26,12 @@
       .carrito {
         margin: 0;
         padding: 0;
-        display: flex; /* Alinea el contenido para evitar espacio adicional */
-        align-items: center; /* Centra verticalmente si es necesario */
-        justify-content: center; /* Centra horizontalmente si es necesario */
+        display: flex;
+        align-items: center;
+        justify-content: center; 
     }   
       
 }
-
 .boton-carro{
     background-color: #050404;
     height: 50px;
@@ -43,17 +42,6 @@
     margin: auto;
     text-align: center;
     font-size: x-large;
-    font-family: 'Times New Roman', Times, serif;
-    a {
-        color: rgb(255, 254, 254);
-        text-decoration: none; 
-        text-shadow: 2px 2px 5px white;
-      }
-  
-      
-      a:visited {
-        color: rgb(255, 255, 255); 
-      }
 }
 
 .imagenes_ropa {
@@ -121,7 +109,7 @@ transition: transform 0.3s ease;
 }
 .busq{
     margin-left: auto;
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(255, 255, 255);
 }
 .lista_ord :hover{
     transition:1s;
@@ -130,17 +118,164 @@ transition: transform 0.3s ease;
     color: white;
 }
 .carrito :hover{
-    transform: scale(1.08);
+    transform: scale(0.8);
+    transition: 1s;
 
 }
+.selecionar_zona{
+    margin-left: 20px;
+}
 .selecionar_zona :hover{
-    transform: scale(1.10);
+    transition: 1s;
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
 }
 .titulo_marca{
+    margin-left: 350px;
     display: inline-block;
     transition: transform 0.3 ease;
 }
 .titulo_marca :hover{
     transform: scale(1.10);
     transform: rotate(360deg);
+}
+.titulo_marca{
+    display: inline-block;
+font-size: 25px;
+font-weight: bold;
+text-shadow: 2px 3px 8px;
+text-align: center;
+top: 5%;
+Left: 42% color rgb(81, 30, 14);
+padding-bottom: 17px;
+}
+
+.titulo_marca span {
+color:white;
+}
+.uno{
+display: inline-block;
+animation: wave 1s  ease-in-out infinite;
+animation-delay: calc(var(--i) * 0.1s); 
+color: white;
+display: inline-block;
+animation: wave 3s ease-in-out infinite;
+animation-delay: calc(var(--i)*00.1s); 
+}
+.dos{
+    display: inline-block;
+animation: wave 1s  ease-in-out infinite;
+animation-delay: calc(var(--i) * 0.1s); 
+color: white;
+display: inline-block;
+animation: wave 2s ease-in-out infinite;
+animation-delay: calc(var(--i)*00.1s); 
+}
+.tres{
+    display: inline-block;
+animation: wave 1s  ease-in-out infinite;
+animation-delay: calc(var(--i) * 0.1s); 
+color: white;
+display: inline-block;
+animation: wave 2.5s ease-in-out infinite;
+animation-delay: calc(var(--i)*00.1s); 
+}
+.cuatro{
+    display: inline-block;
+animation: wave 1s  ease-in-out infinite;
+animation-delay: calc(var(--i) * 0.1s); 
+color: white;
+display: inline-block;
+animation: wave 3s ease-in-out infinite;
+animation-delay: calc(var(--i)*00.4s); 
+}
+.cinco{
+    display: inline-block;
+animation: wave 1s  ease-in-out infinite;
+animation-delay: calc(var(--i) * 0.1s); 
+color: white;
+display: inline-block;
+animation: wave 1.5s ease-in-out infinite;
+animation-delay: calc(var(--i)*00.1s); 
+
+}
+
+.seis{
+    display: inline-block;
+    animation: wave 1s  ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.1s); 
+    color: white;
+    display: inline-block;
+    animation: wave 3s ease-in-out infinite;
+    animation-delay: calc(var(--i)*00.1s); 
+    }
+    .siete{
+        display: inline-block;
+    animation: wave 1s  ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.1s); 
+    color: white;
+    display: inline-block;
+    animation: wave 2s ease-in-out infinite;
+    animation-delay: calc(var(--i)*00.1s); 
+    }
+    .ocho{
+        display: inline-block;
+    animation: wave 1s  ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.1s); 
+    color: white;
+    display: inline-block;
+    animation: wave 2.5s ease-in-out infinite;
+    animation-delay: calc(var(--i)*00.1s); 
+    }
+    .nueve{
+        display: inline-block;
+    animation: wave 1s  ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.1s); 
+    color: white;
+    display: inline-block;
+    animation: wave 3s ease-in-out infinite;
+    animation-delay: calc(var(--i)*00.4s); 
+    }
+    .diez{
+        display: inline-block;
+    animation: wave 1s  ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.1s); 
+    color: white;
+    display: inline-block;
+    animation: wave 1.5s ease-in-out infinite;
+    animation-delay: calc(var(--i)*00.1s); 
+    }
+    .once{
+        display: inline-block;
+animation: wave 1s  ease-in-out infinite;
+animation-delay: calc(var(--i) * 0.1s); 
+color: white;
+display: inline-block;
+animation: wave 3s ease-in-out infinite;
+animation-delay: calc(var(--i)*00.4s); 
+    }        
+@keyframes wave{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+.select-redondo{
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px solid black;
+}
+.busq input{ 
+    border-radius: 10px;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.busq button{ 
+    border-radius: 10px;
+    padding: 3px;
+    border: 1px solid black;
 }
