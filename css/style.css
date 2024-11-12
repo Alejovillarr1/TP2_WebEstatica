@@ -1,8 +1,8 @@
 
 
 .barra_arriba {
-    background-color: #050404;
-    border: 1px solid #050404;
+    background-color: #000000;
+    border: 1px solid #000000;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
@@ -26,13 +26,12 @@
       .carrito {
         margin: 0;
         padding: 0;
-        display: flex; /* Alinea el contenido para evitar espacio adicional */
-        align-items: center; /* Centra verticalmente si es necesario */
-        justify-content: center; /* Centra horizontalmente si es necesario */
+        display: flex;
+        align-items: center;
+        justify-content: center; 
     }   
       
 }
-
 .boton-carro{
     background-color: #050404;
     height: 50px;
@@ -110,7 +109,7 @@ transition: transform 0.3s ease;
 }
 .busq{
     margin-left: auto;
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(255, 255, 255);
 }
 .lista_ord :hover{
     transition:1s;
@@ -119,13 +118,21 @@ transition: transform 0.3s ease;
     color: white;
 }
 .carrito :hover{
-    transform: scale(1.08);
+    transform: scale(0.8);
+    transition: 1s;
 
 }
+.selecionar_zona{
+    margin-left: 20px;
+}
 .selecionar_zona :hover{
-    transform: scale(1.10);
+    transition: 1s;
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
 }
 .titulo_marca{
+    margin-left: 350px;
     display: inline-block;
     transition: transform 0.3 ease;
 }
@@ -255,4 +262,20 @@ animation-delay: calc(var(--i)*00.4s);
     50%{
         transform: translateY(-10px);
     }
+}
+.select-redondo{
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px solid black;
+}
+.busq input{ 
+    border-radius: 10px;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.busq button{ 
+    border-radius: 10px;
+    padding: 3px;
+    border: 1px solid black;
 }
