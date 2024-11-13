@@ -58,11 +58,14 @@
 
 .imagenes_ropa {
     border: 2px solid rgb(0, 0, 0);
-    width: 50%;
+    width: 100%;
     margin: auto;
-    max-width: 1200px;
+    max-width: 100%;
 }
-
+.imagen_uno{
+    max-width: 100%;
+    height: 300px;
+}
 .primera_imagen {
     display: inline-block;
     transition: transform 0.3s ease; /* para la transición suave */
