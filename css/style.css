@@ -1,5 +1,11 @@
-
-
+input{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+select{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .barra_arriba {
     background-color: #000000;
     border: 1px solid #000000;
@@ -46,44 +52,86 @@
 
 .imagenes_ropa {
     border: 2px solid rgb(0, 0, 0);
-    width: 50%;
+    width: 100%;
     margin: auto;
-    max-width: 1200px;
+    max-width: 100%;
 }
-
+.imagen_uno{
+    max-width: 100%;
+    height: 300px;
+}
+.imagenes_venta{
+    border: 5px solid #000000;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    text-align: center;
+}
 .primera_imagen {
     display: inline-block;
-    transition: transform 0.3s ease; /* para la transición suave */
+    transition: transform 0.7s ease; /* para la transición suave */
 }
 
-.primera_imagen:hover {
+.primera_imagen :hover {
     display: inline-block;
     transform: scale(1.05); /* para el efecto de movimiento */
+<<<<<<< HEAD
     
+=======
+    transition: transform 0.7s ease;
+>>>>>>> d94b219867b3777c3a0eb6d2bc128ce461fb20c7
 }
 
 .segunda_imagen {
 display: inline-block;
-transition: transform 0.3s ease;
+transition: transform 0.7s ease;
 }
 
-.segunda_imagen:hover {
+.segunda_imagen  :hover {
     display: inline-block;
-    transform: scale(1.05);
+    transform: scale(1.05); /* para el efecto de movimiento */
+    transition: transform 0.7s ease;
 }
 .tercera_imagen {
     display: inline-block;
-    transition: transform 0.3s ease;
-    height: max-content;
-        width: max-content;
-    }
-    
-.tercera_imagen:hover {
+    transition: transform 0.7s ease;
+}
+.tercera_imagen  :hover {
         display: inline-block;
         transform: scale(1.05);
+        transition: transform 0.7s ease;
+    }
+.cuarta_imagen   :hover {
+        display: inline-block;
+        transform: scale(1.05);
+        transition: transform 0.7s ease;
+    }
+.quinta_imagen   :hover {
+        display: inline-block;
+        transform: scale(1.05);
+        transition: transform 0.7s ease;
+    }
+.sexta_imagen    :hover {
+        display: inline-block;
+        transform: scale(1.05);
+        transition: transform 0.7s ease;
+    }
+.septima_imagen  :hover {
+        display: inline-block;
+        transform: scale(1.05);
+        transition: transform 0.7s ease;
+    }
+.octava_imagen   :hover {
+        display: inline-block;
+        transform: scale(1.05);
+        transition: transform 0.7s ease;
+    }
+.novena_imagen   :hover {
+        display: inline-block;
+        transform: scale(1.05);
+        transition: transform 0.7s ease;
     }
 .imagenes_ropa{
-    transition: transform 0.3s ease;
     height: max-content;
         width: max-content;
     }
@@ -111,6 +159,10 @@ transition: transform 0.3s ease;
 .busq{
     margin-left: auto;
     background-color: rgb(255, 255, 255);
+}
+.busq :hover{
+    transform: scale(0.9);
+    transition: 1s;
 }
 .lista_ord :hover{
     transition:1s;
@@ -277,6 +329,7 @@ animation-delay: calc(var(--i)*00.4s);
 }
 
 .busq button{ 
+<<<<<<< HEAD
     border-radius: 10px;
     padding: 3px;
     border: 1px solid black;
@@ -288,3 +341,55 @@ animation-delay: calc(var(--i)*00.4s);
 
 }
 
+=======
+    padding: 2px;
+    background-color: white;
+    border: 0.1px;
+}
+.layout {
+    border:1px #000000;
+    width: 50px;
+  
+    display: grid;
+    grid:
+      "primera_imagen segunda_imagen tercera_imagen" 1fr
+      "cuarta_imagen quinta_imagen sexta_imagen" 1fr
+      "septima_imagen octava_imagen novena_imagen" 1fr
+      / 1fr 1fr 1fr;
+    gap: 5px;
+  }
+  
+  .primera_imagen { grid-area: primera_imagen; }
+  .segunda_imagen { grid-area: segunda_imagen; }
+  .tercera_imagen { grid-area: tercera_imagen; }
+  .cuarta_imagen { grid-area: cuarta_imagen; }
+  .quinta_imagen { grid-area: quinta_imagen; }
+  .sexta_imagen { grid-area: sexta_imagen; }
+  .septima_imagen { grid-area: septima_imagen; }
+  .octava_imagen { grid-area: octava_imagen; }
+  .novena_imagen { grid-area: novena_imagen; }
+  .linea_progreso{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
+        background-color: #000000;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 1s ease;
+      }
+      .busq :hover .linea_progreso{
+        transform: scaleX(1);
+  }
+.texto_img{
+    margin: auto;
+    margin-top: 3px;
+    margin-left: 5px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: font-size 0.3s ease;
+    font-size: 15px;
+    position: relative;
+    color: gray;
+}
+>>>>>>> d94b219867b3777c3a0eb6d2bc128ce461fb20c7
