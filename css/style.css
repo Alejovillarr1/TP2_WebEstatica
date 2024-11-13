@@ -59,6 +59,7 @@
 .primera_imagen:hover {
     display: inline-block;
     transform: scale(1.05); /* para el efecto de movimiento */
+    background-image: url()
 }
 
 .segunda_imagen {
