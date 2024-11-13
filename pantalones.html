@@ -8,21 +8,18 @@
 </head>
 
 <body>
-    <div class = "contenedor"> 
     <div class="barra_arriba">
         <div class="logo">
         <img src="imagenes/dressuniquelgoo.png" alt="dressuniquelgoo.png" width="50px" height="50px">
         </div>
         <div class="carrito">
-            
-            <a href = "carrito.html"><img src="imagenes/carrito.png" alt="carritologo" width="50px" height="50px">  </img> </a>
-
+            <button>Carrito</button>
         </div>
         <div class="selecionar_zona">
-            <label for="shop"></label>
-            <select name="shop" id="shop" class="select-redondo">
-            <option value="tienda">Tienda</option>
+            <label for="shop">shop</label>
+            <select name="shop" id="shop">
             <option value="Pantalones">Pantalones</option>
+            <option value="tienda">Tienda</option>
             <option value="Remeras">Remeras</option>
             <option value="lanzamiento">Lanzamiento</option>
             </select>
@@ -40,13 +37,15 @@
             <span class = "diez" style="--i:1">U</span>
             <span class = "once" style="--i:1">E</span>
         </div> 
+    
     </div>
+    
     <div class = "barra_abajo">
         <div class = "source">
             <p>Home</p>
         </div> 
         <div class = "categoria_src">
-            <p>/Tienda</p>
+            <p>/Pantalones</p>
         </div>
         <div class = "busq">
             <input type="text" placeholder="Buscar..." name="search" />
@@ -55,21 +54,24 @@
             </button>
         </div>
         <div class = "lista_ord">
-                <select name="ord" id="ord" class="select-redondo">
+                <select name="ord" id="ord">
                 <option value="" disabled selected>Ordenado por:</option>
                 <option value="mascaro">Mas caro</option>
                 <option value="masbarato">Mas barato</option>
                 <option value="relevancia">Relevancia</option>
                 </select>
-                
         </div>
     </div>
     <div class="imagenes_ropa">
-        <div class="primera_imagen">
-        <img src="imagenes/DressUnique.png" alt="buzo.png.jpeg" height="1587px" width="2245px" class="imagen_uno">
+        <div class="primera imagen">
+        <img src="imagenes/jean.png.jpeg" alt="jean.png.jpeg" height="377px" width="377px">
         </div>
-    </div>
-</div>
+
+
+        <div class="margen">
+            <p> DRESS UNIQUE </p>
+        </div>
+    </div>                                                                                                                                                                          
 </body>
 
 </html>
