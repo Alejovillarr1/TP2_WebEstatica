@@ -59,6 +59,7 @@
 .primera_imagen:hover {
     display: inline-block;
     transform: scale(1.05); /* para el efecto de movimiento */
+    
 }
 
 .segunda_imagen {
@@ -154,6 +155,7 @@ padding-bottom: 17px;
 .titulo_marca span {
 color:white;
 }
+
 .uno{
 display: inline-block;
 animation: wave 1s  ease-in-out infinite;
@@ -279,3 +281,10 @@ animation-delay: calc(var(--i)*00.4s);
     padding: 3px;
     border: 1px solid black;
 }
+.pie{
+    background-color: #000000;
+    border: 1px solid #000000;
+    margin-top: 50px;
+
+}
+
