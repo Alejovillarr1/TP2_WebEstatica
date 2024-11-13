@@ -366,6 +366,7 @@ animation-delay: calc(var(--i)*00.4s);
   }
 .texto_img{
     margin: auto;
+    margin-top: 3px;
     margin-left: 5px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: font-size 0.3s ease;
