@@ -13,6 +13,13 @@ select{
     display: flex;
     align-items: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 90px;
+}
+.spotify{
+    width: auto;
+    height: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .logo {
@@ -49,12 +56,18 @@ select{
     text-align: center;
     font-size: x-large;
 }
-
+.codigo{
+    margin-right:10px;
+}
 .imagenes_ropa {
     border: 2px solid rgb(0, 0, 0);
     width: 100%;
     margin: auto;
     max-width: 100%;
+}
+.presentacion{
+    width: 1200px;
+    height: 300px;
 }
 .imagen_uno{
     max-width: 100%;
@@ -63,8 +76,8 @@ select{
 .imagenes_venta{
     border: 5px solid #000000;
     margin: 0 auto;
-    max-width: 1200px;
-    width: 90%;
+    max-width: 1142px;
+    width: 100%;
     text-align: center;
 }
 .primera_imagen {
