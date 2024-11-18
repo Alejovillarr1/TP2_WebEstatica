@@ -5,7 +5,48 @@
     <meta charset="UTF-8" />
     <title>Rulette</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+          .imagenes_ropa div {
+            position: relative;
+            display: inline-block;
+            width: 377px;
+            height: 377px;
+            overflow: hidden;
+        }
+
+        .imagenes_ropa div img {
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .imagenes_ropa div:hover img {
+            opacity: 0;
+        }
+
+        .imagenes_ropa div:hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+
+        .primera_imagen:hover::before {
+            background-image: url('imagenes/buzo-hover.png'); /* Imagen al pasar el mouse */
+        }
+
+        .segunda_imagen:hover::before {
+            background-image: url('imagenes/jean-hover.png');
+        }
+
+        .tercera_imagen:hover::before {
+            background-image: url('imagenes/buzo-hover.png');
+        }
 </head>
+</style>
 
 <body>
     <div class = "contenedor"> 
@@ -17,12 +58,12 @@
                 <button>Carrito</button>
             </div>
             <div class="selecionar_zona">
-                <label for="shop">shop</label>
-                <select name="shop" id="shop">
+                <label for="shop">Shop</label>
+                <select name="Shop" id="shop">
                 <option value="Pantalones">Pantalones</option>
-                <option value="tienda">Tienda</option>
+                <option value="Tienda">Tienda</option>
                 <option value="Remeras">Remeras</option>
-                <option value="lanzamiento">Lanzamiento</option>
+                <option value="Lanzamiento">Lanzamiento</option>
                 </select>
             </div>
             <div class="titulo_marca">
@@ -63,19 +104,58 @@
                 </select>
         </div>
     </div>
-    <div class="imagenes_ropa">
-        <div class="primera_imagen">
-        <img src="imagenes/buzo.png.jpeg" alt="buzo.png.jpeg" height="377px" width="377px">
-        </div>
-        <div class="segunda_imagen">
-        <img src="imagenes/jean.png.jpeg" alt="jean.png.jpeg" height="377px" width="377px">
-        </div>
-        <div class="tercera_imagen">
-        <img src="imagenes/buzo.png.jpeg" alt="jean.png.jpeg" height="377px" width="377px">
-        </div>
-        <div class="margen">
-            <p> DRESS UNIQUE </p>
-        </div>
+    <div class="imagenes_venta">
+        <section class="layout">
+            <div class="primera_imagen">
+                <img src="imagenes/buzo.png.jpeg" alt="buzo" height="377px" width="377px">
+                <p class="texto_img">BUZO NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$40.000</strong></p>
+            </div>
+            <div class="segunda_imagen">
+                <img src="imagenes/jean.png.jpeg" alt="jean" height="377px" width="377px">
+                <p class="texto_img">JEAN NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$30.000</strong></p>
+            </div>
+            <div class="tercera_imagen">
+                <img src="imagenes/buzo.png.jpeg" alt="buzo2" height="377px" width="377px">
+                <p class="texto_img">BUZO NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$40.000</strong></p>
+            </div>
+            <div class="cuarta_imagen">
+                <img src="imagenes/jean.png.jpeg" alt="jean" height="377px" width="377px">
+                <p class="texto_img">JEAN NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$30.000</strong></p>
+            </div>
+            <div class="quinta_imagen">
+                <img src="imagenes/buzo.png.jpeg" alt="buzo" height="377px" width="377px">
+                <p class="texto_img">BUZO NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$40.000</strong></p>
+            </div>
+            <div class="sexta_imagen">
+                
+                <img src="imagenes/jean.png.jpeg" alt="jean" height="377px" width="377px">
+                <p class="texto_img">JEAN NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$30.000</strong></p>
+            </div>
+            <div class="septima_imagen">
+                <img src="imagenes/buzo.png.jpeg" alt="buzo" height="377px" width="377px">
+                <p class="texto_img">BUZO NEGRO CORTE OVERSIZE</p>
+                
+                <p class = "precio_img"> <strong>$40.000</strong></p>
+            </div>
+            <div class="octava_imagen">
+                
+                <img src="imagenes/jean.png.jpeg" alt="jean" height="377px" width="377px">
+                <p class="texto_img">JEAN NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$30.000</strong></p>
+            </div>
+            <div class="novena_imagen">
+                <img src="imagenes/buzo.png.jpeg" alt="buzo" height="377px" width="377px">
+                <p class="texto_img">BUZO NEGRO CORTE OVERSIZE</p>
+                
+                <p class = "precio_img"> <strong>$40.000</strong></p>
+            </div>
+        
     </div>
 </div>
 </body>
