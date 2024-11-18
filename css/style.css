@@ -80,66 +80,105 @@ select{
     width: 100%;
     text-align: center;
 }
+.imagenes_venta div {
+            
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+    display: inline-block;
+    width: 377px;
+    height: 377px;
+}
+
+.imagenes_venta div img {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.imagenes_venta div:hover img {
+    opacity: 0;
+    
+}
+
+.imagenes_venta div:hover::before {
+    content: '';
+    transition: 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
 .primera_imagen {
     display: inline-block;
     transition: transform 0.7s ease; /* para la transición suave */
 }
 
-.primera_imagen :hover {
+.primera_imagen:hover::before {
+    background-image: url(../imagenes/pre_buzo.jpg);
+    display: inline-block;
+    transform: scale(1.05); /* para el efecto de movimiento */
+    transition: transform 0.7s ease;
+}.segunda_imagen:hover::before {
+    background-image: url(../imagenes/pre_jean.jpg);
+    
     display: inline-block;
     transform: scale(1.05); /* para el efecto de movimiento */
     transition: transform 0.7s ease;
 }
 
-.segunda_imagen {
-display: inline-block;
-transition: transform 0.7s ease;
-}
-
-.segunda_imagen  :hover {
+.tercera_imagen:hover::before {
+    background-image: url(../imagenes/pre_buzo.jpg);
+    
     display: inline-block;
     transform: scale(1.05); /* para el efecto de movimiento */
     transition: transform 0.7s ease;
 }
-.tercera_imagen {
+.cuarta_imagen:hover::before {
+    background-image: url(../imagenes/pre_jean.jpg);
     display: inline-block;
+    transform: scale(1.05); /* para el efecto de movimiento */
     transition: transform 0.7s ease;
 }
-.tercera_imagen  :hover {
-        display: inline-block;
-        transform: scale(1.05);
-        transition: transform 0.7s ease;
-    }
-.cuarta_imagen   :hover {
-        display: inline-block;
-        transform: scale(1.05);
-        transition: transform 0.7s ease;
-    }
-.quinta_imagen   :hover {
-        display: inline-block;
-        transform: scale(1.05);
-        transition: transform 0.7s ease;
-    }
-.sexta_imagen    :hover {
-        display: inline-block;
-        transform: scale(1.05);
-        transition: transform 0.7s ease;
-    }
-.septima_imagen  :hover {
-        display: inline-block;
-        transform: scale(1.05);
-        transition: transform 0.7s ease;
-    }
-.octava_imagen   :hover {
-        display: inline-block;
-        transform: scale(1.05);
-        transition: transform 0.7s ease;
-    }
-.novena_imagen   :hover {
-        display: inline-block;
-        transform: scale(1.05);
-        transition: transform 0.7s ease;
-    }
+.quinta_imagen:hover::before {
+    background-image: url(../imagenes/pre_buzo.jpg);
+    
+    display: inline-block;
+    transform: scale(1.05); /* para el efecto de movimiento */
+    transition: transform 0.7s ease;
+}
+.sexta_imagen:hover::before {
+    background-image: url(../imagenes/pre_jean.jpg);
+    
+    display: inline-block;
+    transform: scale(1.05); /* para el efecto de movimiento */
+    transition: transform 0.7s ease;
+}
+.septima_imagen:hover::before {
+    background-image: url(../imagenes/pre_buzo.jpg);
+    
+    display: inline-block;
+    transform: scale(1.05); /* para el efecto de movimiento */
+    transition: transform 0.7s ease;
+}
+.octava_imagen:hover::before {
+    background-image: url(../imagenes/pre_jean.jpg);
+    
+    display: inline-block;
+    transform: scale(1.05); /* para el efecto de movimiento */
+    transition: transform 0.7s ease;
+}
+.novena_imagen:hover::before {
+    background-image: url(../imagenes/pre_buzo.jpg);
+    
+    display: inline-block;
+    transform: scale(1.05); /* para el efecto de movimiento */
+    transition: transform 0.7s ease;
+}
 .imagenes_ropa{
     height: max-content;
         width: max-content;
@@ -386,40 +425,11 @@ animation-delay: calc(var(--i)*00.4s);
     font-size: 15px;
     position: relative;
     color: gray;
-.lanzamiento {
-    .layout div {
-        position: relative;
-        overflow: hidden;
-        transition: transform 0.7s ease; /* Escala suave */
-    }
-    
-    .layout div img {
-        display: block;
-        width: 100%;
-        height: auto;
-        transition: opacity 0.5s ease-in-out;
-    }
-    
-    .layout div .hover-img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-    }
-    
-    .layout div:hover img {
-        opacity: 0;
-    }
-    
-    .layout div:hover .hover-img {
-        opacity: 1;
-    }
-    
-
-
-
-}
-}
+     }
+     .carrito_text{
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+     }

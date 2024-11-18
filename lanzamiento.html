@@ -5,49 +5,7 @@
     <meta charset="UTF-8" />
     <title>Rulette</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-          .imagenes_ropa div {
-            position: relative;
-            display: inline-block;
-            width: 377px;
-            height: 377px;
-            overflow: hidden;
-        }
-
-        .imagenes_ropa div img {
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        .imagenes_ropa div:hover img {
-            opacity: 0;
-        }
-
-        .imagenes_ropa div:hover::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            z-index: 1;
-        }
-
-        .primera_imagen:hover::before {
-            background-image: url('imagenes/buzo-hover.png'); /* Imagen al pasar el mouse */
-        }
-
-        .segunda_imagen:hover::before {
-            background-image: url('imagenes/jean-hover.png');
-        }
-
-        .tercera_imagen:hover::before {
-            background-image: url('imagenes/buzo-hover.png');
-        }
 </head>
-</style>
-
 <body>
     <div class = "contenedor"> 
         <div class="barra_arriba">
@@ -55,15 +13,17 @@
             <img src="imagenes/dressuniquelgoo.png" alt="dressuniquelgoo.png" width="50px" height="50px">
             </div>
             <div class="carrito">
-                <button>Carrito</button>
+                
+                <a href = "carrito.html"><img src="imagenes/carrito.png" alt="carritologo" width="50px" height="50px">  </img> </a>
+    
             </div>
             <div class="selecionar_zona">
-                <label for="shop">Shop</label>
-                <select name="Shop" id="shop">
+                <label for="shop"></label>
+                <select name="shop" id="shop" class="select-redondo">
+                <option value="tienda">Tienda</option>
                 <option value="Pantalones">Pantalones</option>
-                <option value="Tienda">Tienda</option>
                 <option value="Remeras">Remeras</option>
-                <option value="Lanzamiento">Lanzamiento</option>
+                <option value="lanzamiento">Lanzamiento</option>
                 </select>
             </div>
             <div class="titulo_marca">
@@ -78,32 +38,43 @@
                 <span class = "nueve"style="--i:1">Q</span>
                 <span class = "diez" style="--i:1">U</span>
                 <span class = "once" style="--i:1">E</span>
+            </div>
+            <div class="spotify">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2sPt8AOAWiqGE9DNO93SIl?utm_source=generator" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class = "barra_abajo">
+            <div class = "source">
+                <p>Home</p>
             </div> 
-        
+            <div class = "categoria_src">
+                <p>/Tienda</p>
+            </div>
+            <div class = "busq">
+                <input class = "barra_busqueda "type="text" placeholder="Buscar..." name="search" />
+                <button type="submit">
+                    <img src="imagenes/busq.png" alt="Buscar" width="12" height="12">
+                    <div class="linea_progreso"></div>
+                </button>
+            </div>
+            <div class = "lista_ord">
+                    <select name="ord" id="ord" class="select-redondo">
+                    <option value="" disabled selected>Ordenado por:</option>
+                    <option value="mascaro">Mas caro</option>
+                    <option value="masbarato">Mas barato</option>
+                    <option value="relevancia">Relevancia</option>
+                    </select>
+                    
+            </div>
         </div>
     </div>
-    <div class = "barra_abajo">
-        <div class = "source">
-            <p>Home</p>
-        </div> 
-        <div class = "categoria_src">
-            <p>/Lanzamiento </p>
-        </div>
-        <div class = "busq">
-            <input type="text" placeholder="Buscar..." name="search" />
-            <button type="submit">
-                <img src="imagenes/busq.png" alt="Buscar" width="10" height="10">
-            </button>
-        </div>
-        <div class = "lista_ord">
-                <select name="ord" id="ord" class="select-redondo">
-                <option value="" disabled selected>Ordenado por:</option>
-                <option value="mascaro">Mas caro</option>
-                <option value="masbarato">Mas barato</option>
-                <option value="relevancia">Relevancia</option>
-                </select>
+    <div class="imagenes_ropa">
+        <div class="presentacion">
+        <img src="imagenes/prese.png" alt="buzopng" height="270px" width="1200px" class="imagen_uno">
+        <img src="" alt="">
         </div>
     </div>
+    
     <div class="imagenes_venta">
         <section class="layout">
             <div class="primera_imagen">
