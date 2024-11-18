@@ -55,6 +55,15 @@ select{
     margin: auto;
     text-align: center;
     font-size: x-large;
+    a {
+        color: rgb(0, 0, 0);
+        text-decoration: none; 
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+        margin-left: 6px;
+      }
+    a:visited {
+        color: rgb(0, 0, 0); 
+      }
 }
 .codigo{
     margin-right:10px;
