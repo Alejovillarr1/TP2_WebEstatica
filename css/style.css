@@ -75,11 +75,7 @@ select{
 .primera_imagen :hover {
     display: inline-block;
     transform: scale(1.05); /* para el efecto de movimiento */
-<<<<<<< HEAD
-    
-=======
     transition: transform 0.7s ease;
->>>>>>> d94b219867b3777c3a0eb6d2bc128ce461fb20c7
 }
 
 .segunda_imagen {
@@ -329,19 +325,6 @@ animation-delay: calc(var(--i)*00.4s);
 }
 
 .busq button{ 
-<<<<<<< HEAD
-    border-radius: 10px;
-    padding: 3px;
-    border: 1px solid black;
-}
-.pie{
-    background-color: #000000;
-    border: 1px solid #000000;
-    margin-top: 50px;
-
-}
-
-=======
     padding: 2px;
     background-color: white;
     border: 0.1px;
@@ -392,4 +375,60 @@ animation-delay: calc(var(--i)*00.4s);
     position: relative;
     color: gray;
 }
->>>>>>> d94b219867b3777c3a0eb6d2bc128ce461fb20c7
+.pie{
+    border: 10px #000000;
+    background-color:#000000;
+} 
+.instagram_l{
+    text-decoration: none;
+}
+.boton_ig {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(255,0,0);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(255,0,0);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+  
+  .boton_ig span {
+    margin: 10px;
+    text-decoration: none;
+  }
+  
+  .boton_ig::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  .boton_ig:hover {
+    color: #fff;
+    border: 1px solid rgb(255,0,0);
+  }
+  
+  .boton_ig:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+  }
