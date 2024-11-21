@@ -94,6 +94,7 @@ select{
     max-width: 1142px;
     width: 100%;
     text-align: center;
+    box-shadow: 5px 5px 7px black;
 }
 .imagenes_venta div {
             
@@ -555,11 +556,11 @@ animation-delay: calc(var(--i)*00.4s);
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid rgb(255,0,0);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 25px;
     outline: none;
     overflow: hidden;
-    color: rgb(255,0,0);
+    color: rgb(255, 255, 255);
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
   }
@@ -588,8 +589,8 @@ animation-delay: calc(var(--i)*00.4s);
   }
   
   .boton_ig:hover {
-    color: #fff;
-    border: 1px solid rgb(255,0,0);
+    color: #7c2863;
+    border: 1px solid rgb(252, 174, 255);
   }
   
   .boton_ig:hover::before {
