@@ -46,8 +46,14 @@ select{
 
 .titulo_marca {
     margin: auto;
-    text-align: center;
+    text-align: auto;
     font-size: x-large;
+    a{
+        color: #000000;
+    }
+    a:visited{
+        color: #000000;
+    }
 }
 
 .imagenes_ropa {
@@ -83,7 +89,7 @@ display: inline-block;
 transition: transform 0.7s ease;
 }
 
-.segunda_imagen  :hover {
+.segunda_imagen:hover {
     display: inline-block;
     transform: scale(1.05); /* para el efecto de movimiento */
     transition: transform 0.7s ease;
@@ -171,14 +177,55 @@ transition: transform 0.7s ease;
     transition: 1s;
 
 }
-.selecionar_zona{
-    margin-left: 20px;
+/* Estilos para el contenedor del dropdown */
+.seleccionar_zona{
+    position: relative;
+    display: inline-block;
 }
-.selecionar_zona :hover{
-    transition: 1s;
-    transform: scale(1.05);
-    background-color: black;
+
+/* Estilos para el botón del dropdown */
+.caja_select {
+    background-color: #3498db;
     color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Estilos para el contenido del dropdown */
+.opciones{
+    display: none; /* Oculta el contenido inicialmente */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+/* Estilos para los enlaces dentro del dropdown */
+.opciones a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Cambia el fondo al pasar el mouse sobre los enlaces */
+.opciones a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Muestra el contenido del dropdown al hacer hover en el contenedor */
+.caja_select:hover .opciones {
+    display: block;
+}
+
+/* Cambia el fondo del botón al hacer hover */
+.caja_select:hover {
+    background-color: #2980b9;
 }
 .titulo_marca{
     margin-left: 350px;
@@ -374,3 +421,53 @@ animation-delay: calc(var(--i)*00.4s);
     position: relative;
     color: gray;
 }
+.secciones{
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none; 
+        text-shadow: 2px 2px 5px rgb(63, 63, 63);
+        margin-left: 6px;
+      }
+    a:visited {
+        color: rgb(230, 223, 223); 
+      }
+}
+.tienda{
+    margin-left: auto;  
+    border-radius: 15px;
+}
+.tienda label{
+    display: none;
+}
+.tienda :hover{
+    transition:1s;
+    transform: scale(1.05);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+ }
+ .lanzamiento_boton{
+    margin-left: auto;
+    border-radius: 15px;
+ }
+ .lanzamiento_boton label{
+    display: none;
+ }
+ .lanzamiento_boton :hover{
+    transition:1s;
+    transform: scale(1.05);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+ }
+ .pantalones_boton{
+    margin-left: auto;
+    border-radius: 15px;
+ }
+ .pantalones_boton label{
+    display: none;
+ }
+ .pantaones_boton :hover{
+    transition:1s;
+    transform: scale(1.05);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+ }
