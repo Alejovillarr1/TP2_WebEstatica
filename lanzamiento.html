@@ -6,7 +6,6 @@
     <title>Rulette</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <div class = "contenedor"> 
         <div class="barra_arriba">
@@ -14,19 +13,25 @@
             <img src="imagenes/dressuniquelgoo.png" alt="dressuniquelgoo.png" width="50px" height="50px">
             </div>
             <div class="carrito">
-                <button>Carrito</button>
+                
+                <a href = "carrito.html"><img src="imagenes/carrito.png" alt="carritologo" width="50px" height="50px">  </img> </a>
+    
             </div>
             <div class="selecionar_zona">
-                <label for="shop">shop</label>
-                <select name="shop" id="shop">
-                <option value="Pantalones">Pantalones</option>
+                <label for="shop"></label>
+                <select name="shop" id="shop" class="select-redondo">
                 <option value="tienda">Tienda</option>
+                <option value="Pantalones">Pantalones</option>
                 <option value="Remeras">Remeras</option>
                 <option value="lanzamiento">Lanzamiento</option>
                 </select>
             </div>
             <div class="titulo_marca">
+<<<<<<< HEAD
                 <a href="index.html">
+=======
+                <a href="index.html"> 
+>>>>>>> fd1b71b76715c5fe527469d63901c9dd6f916e58
                 <span class = "uno" style="--i:1">D</span>
                 <span class="dos" style="--i:1">R</span>
                 <span class = "tres" style="--i:1">E</span>
@@ -38,48 +43,111 @@
                 <span class = "nueve"style="--i:1">Q</span>
                 <span class = "diez" style="--i:1">U</span>
                 <span class = "once" style="--i:1">E</span>
+<<<<<<< HEAD
             </a>
+=======
+                </a>
+            </div>
+            <div class="spotify">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2sPt8AOAWiqGE9DNO93SIl?utm_source=generator" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class = "barra_abajo">
+            <div class = "source">
+                <p>Home</p>
+>>>>>>> fd1b71b76715c5fe527469d63901c9dd6f916e58
             </div> 
-        
-        </div>
-    </div>
-    <div class = "barra_abajo">
-        <div class = "source">
-            <p>Home</p>
-        </div> 
-        <div class = "categoria_src">
-            <p>/Lanzamiento </p>
-        </div>
-        <div class = "busq">
-            <input type="text" placeholder="Buscar..." name="search" />
-            <button type="submit">
-                <img src="imagenes/busq.png" alt="Buscar" width="10" height="10">
-            </button>
-        </div>
-        <div class = "lista_ord">
-                <select name="ord" id="ord" class="select-redondo">
-                <option value="" disabled selected>Ordenado por:</option>
-                <option value="mascaro">Mas caro</option>
-                <option value="masbarato">Mas barato</option>
-                <option value="relevancia">Relevancia</option>
-                </select>
+            <div class = "categoria_src">
+                <p>/Tienda</p>
+            </div>
+            <div class = "busq">
+                <input class = "barra_busqueda "type="text" placeholder="Buscar..." name="search" />
+                <button type="submit">
+                    <img src="imagenes/busq.png" alt="Buscar" width="12" height="12">
+                    <div class="linea_progreso"></div>
+                </button>
+            </div>
+            <div class = "lista_ord">
+                    <select name="ord" id="ord" class="select-redondo">
+                    <option value="" disabled selected>Ordenado por:</option>
+                    <option value="mascaro">Mas caro</option>
+                    <option value="masbarato">Mas barato</option>
+                    <option value="relevancia">Relevancia</option>
+                    </select>
+                    
+            </div>
         </div>
     </div>
     <div class="imagenes_ropa">
-        <div class="primera_imagen">
-        <img src="imagenes/buzo.png.jpeg" alt="buzo.png.jpeg" height="377px" width="377px">
-        </div>
-        <div class="segunda_imagen">
-        <img src="imagenes/jean.png.jpeg" alt="jean.png.jpeg" height="377px" width="377px">
-        </div>
-        <div class="tercera_imagen">
-        <img src="imagenes/buzo.png.jpeg" alt="jean.png.jpeg" height="377px" width="377px">
-        </div>
-        <div class="margen">
-            <p> DRESS UNIQUE </p>
+        <div class="presentacion">
+        <img src="imagenes/prese.png" alt="buzopng" height="270px" width="1200px" class="imagen_uno">
+        <img src="" alt="">
         </div>
     </div>
+    
+    <div class="imagenes_venta">
+        <section class="layout">
+            <div class="primera_imagen">
+                <img src="imagenes/buzo.png.jpeg" alt="buzo" height="377px" width="377px">
+                <p class="texto_img">BUZO NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$40.000</strong></p>
+            </div>
+            <div class="segunda_imagen">
+                <img src="imagenes/jean.png.jpeg" alt="jean" height="377px" width="377px">
+                <p class="texto_img">JEAN NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$30.000</strong></p>
+            </div>
+            <div class="tercera_imagen">
+                <img src="imagenes/buzo.png.jpeg" alt="buzo2" height="377px" width="377px">
+                <p class="texto_img">BUZO NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$40.000</strong></p>
+            </div>
+            <div class="cuarta_imagen">
+                <img src="imagenes/jean.png.jpeg" alt="jean" height="377px" width="377px">
+                <p class="texto_img">JEAN NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$30.000</strong></p>
+            </div>
+            <div class="quinta_imagen">
+                <img src="imagenes/buzo.png.jpeg" alt="buzo" height="377px" width="377px">
+                <p class="texto_img">BUZO NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$40.000</strong></p>
+            </div>
+            <div class="sexta_imagen">
+                
+                <img src="imagenes/jean.png.jpeg" alt="jean" height="377px" width="377px">
+                <p class="texto_img">JEAN NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$30.000</strong></p>
+            </div>
+            <div class="septima_imagen">
+                <img src="imagenes/buzo.png.jpeg" alt="buzo" height="377px" width="377px">
+                <p class="texto_img">BUZO NEGRO CORTE OVERSIZE</p>
+                
+                <p class = "precio_img"> <strong>$40.000</strong></p>
+            </div>
+            <div class="octava_imagen">
+                
+                <img src="imagenes/jean.png.jpeg" alt="jean" height="377px" width="377px">
+                <p class="texto_img">JEAN NEGRO CORTE OVERSIZE</p>
+                <p class = "precio_img"> <strong>$30.000</strong></p>
+            </div>
+            <div class="novena_imagen">
+                <img src="imagenes/buzo.png.jpeg" alt="buzo" height="377px" width="377px">
+                <p class="texto_img">BUZO NEGRO CORTE OVERSIZE</p>
+                
+                <p class = "precio_img"> <strong>$40.000</strong></p>
+            </div>
+        
+    </div>
 </div>
+<div class="enlaces">
+    <p>enlaces momentaneos</p>
+    <p>lanzamiento</p>
+    <a href = "lanzamiento.html"><img src="imagenes/lanzamiento.png" alt="carritologo" width="50px" height="50px">  </img> </a>
+    <p>Pantalones</p>
+    <a href = "pantalones.html"><img src="imagenes/pantalones.png" alt="carritologo" width="80px" height="50px">  </img> </a>
+
+</div>
+
 </body>
 
 </html>
