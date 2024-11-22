@@ -6,6 +6,9 @@ select{
     
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+}
 .barra_arriba {
     background-color: #000000;
     border: 1px solid #000000;
@@ -53,8 +56,14 @@ select{
 
 .titulo_marca {
     margin: auto;
-    text-align: center;
+    text-align: auto;
     font-size: x-large;
+    a{
+        color: #000000;
+    }
+    a:visited{
+        color: #000000;
+    }
     a {
         color: rgb(0, 0, 0);
         text-decoration: none; 
@@ -73,7 +82,6 @@ select{
     width: 100%;
     margin: auto;
     max-width: 100%;
-    display: flex;
 }
 .presentacion{
     width: 1200px;
@@ -89,6 +97,7 @@ select{
     max-width: 1142px;
     width: 100%;
     text-align: center;
+    box-shadow: 5px 5px 7px black;
 }
 .imagenes_venta div {
             
@@ -125,68 +134,74 @@ select{
 }
 .primera_imagen {
     display: inline-block;
-    transition: transform 0.7s ease; /* para la transición suave */
+    transition: transform 0.7s ease; 
 }
 
 .primera_imagen:hover::before {
     background-image: url(../imagenes/pre_buzo.jpg);
     display: inline-block;
-    transform: scale(1.05); /* para el efecto de movimiento */
+    transform: scale(1.05); 
     transition: transform 0.7s ease;
 }.segunda_imagen:hover::before {
     background-image: url(../imagenes/pre_jean.jpg);
     
     display: inline-block;
-    transform: scale(1.05); /* para el efecto de movimiento */
+    transform: scale(1.05);
     transition: transform 0.7s ease;
 }
+ HEAD
+.segunda_imagen {
+display: inline-block;
+transition: transform 0.7s ease;
+}
 
+.segunda_imagen:hover {
 .tercera_imagen:hover::before {
     background-image: url(../imagenes/pre_buzo.jpg);
-    
     display: inline-block;
-    transform: scale(1.05); /* para el efecto de movimiento */
+    transform: scale(1.05); 
     transition: transform 0.7s ease;
+}
 }
 .cuarta_imagen:hover::before {
     background-image: url(../imagenes/pre_jean.jpg);
     display: inline-block;
-    transform: scale(1.05); /* para el efecto de movimiento */
+    transform: scale(1.05); 
     transition: transform 0.7s ease;
 }
 .quinta_imagen:hover::before {
     background-image: url(../imagenes/pre_buzo.jpg);
     
     display: inline-block;
-    transform: scale(1.05); /* para el efecto de movimiento */
+    transform: scale(1.05); 
     transition: transform 0.7s ease;
 }
 .sexta_imagen:hover::before {
     background-image: url(../imagenes/pre_jean.jpg);
     
     display: inline-block;
-    transform: scale(1.05); /* para el efecto de movimiento */
+    transform: scale(1.05); 
     transition: transform 0.7s ease;
 }
 .septima_imagen:hover::before {
     background-image: url(../imagenes/pre_buzo.jpg);
     
     display: inline-block;
-    transform: scale(1.05); /* para el efecto de movimiento */
+    transform: scale(1.05); 
     transition: transform 0.7s ease;
 }
 .octava_imagen:hover::before {
     background-image: url(../imagenes/pre_jean.jpg);
     
     display: inline-block;
-    transform: scale(1.05); /* para el efecto de movimiento */
+    transform: scale(1.05); 
     transition: transform 0.7s ease;
 }
 .novena_imagen:hover::before {
     background-image: url(../imagenes/pre_buzo.jpg);
     
     display: inline-block;
-    transform: scale(1.05); /* para el efecto de movimiento */
+    transform: scale(1.05); 
     transition: transform 0.7s ease;
 }
 .imagenes_ropa{
@@ -225,22 +240,65 @@ select{
 .lista_ord:hover{
     transition:1s;
     transform: scale(1.05);
-    background-color: black;
-    color: white;
 }
 .carrito:hover{
     transform: scale(0.8);
     transition: 1s;
 
 }
-.selecionar_zona{
-    margin-left: 20px;
-}
 .selecionar_zona:hover{
     transition: 1s;
     transform: scale(1.05);
     background-color: black;
+}
+.seleccionar_zona{
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+.caja_select {
+    background-color: #3498db;
     color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.opciones{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+
+.opciones a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.opciones a:hover {
+    background-color: #f1f1f1;
+}
+
+
+.caja_select:hover .opciones {
+    display: block;
+}
+
+
+.caja_select:hover {
+    background-color: #2980b9;
 }
 .titulo_marca{
     margin-left: 350px;
@@ -380,6 +438,11 @@ animation-delay: calc(var(--i)*00.4s);
     padding: 5px;
     border: 1px solid black;
 }
+.select-redondo:hover{
+    transition: 1s;
+    background-color: #000000;
+    color: #f1f1f1;
+}
 .busq input{ 
     border-radius: 10px;
     padding: 3px;
@@ -437,6 +500,68 @@ animation-delay: calc(var(--i)*00.4s);
     position: relative;
     color: gray;
 }
+.secciones{
+    margin-right: 10px;
+    a {
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 5px rgb(63, 63, 63);
+        margin-left: 6px;
+      }
+    a:visited {
+        color: rgb(230, 223, 223); 
+      }
+}
+.tienda_boton{
+    padding: 2px;
+    background-color: white;
+    border: 0.1px;
+    border-radius: 20px;
+}
+.tienda_boton label{
+    border-radius: 20px;
+    padding: 3px;
+    border: 1px solid black;
+}
+.tienda_boton:hover{
+    transition:1s;
+    transform: scale(1.05);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+ }
+ .lanzamiento_boton{
+    padding: 2px;
+    background-color: white;
+    border: 0.1px;
+    border-radius: 20px;
+}
+.lanzamiento_boton label{
+    border-radius: 20px;
+    padding: 3px;
+    border: 1px solid black;
+}
+.lanzamiento_boton:hover{
+    transition:1s;
+    transform: scale(1.05);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+ }
+ .pantalones_boton{
+    padding: 2px;
+    background-color: white;
+    border: 0.1px;
+    border-radius: 20px;
+}
+.pantalones_boton label{
+    border-radius: 20px;
+    padding: 3px;
+    border: 1px solid black;
+}
+.pantalones_boton:hover{
+    transition:1s;
+    transform: scale(1.05);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+ }
 .pie{
     border: 10px #000000;
     background-color:#000000;
@@ -454,11 +579,11 @@ animation-delay: calc(var(--i)*00.4s);
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid rgb(255,0,0);
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 25px;
     outline: none;
     overflow: hidden;
-    color: rgb(255,0,0);
+    color: rgb(255, 255, 255);
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
   }
@@ -487,8 +612,8 @@ animation-delay: calc(var(--i)*00.4s);
   }
   
   .boton_ig:hover {
-    color: #fff;
-    border: 1px solid rgb(255,0,0);
+    color: #7c2863;
+    border: 1px solid rgb(252, 174, 255);
   }
   
   .boton_ig:hover::before {
@@ -501,4 +626,3 @@ animation-delay: calc(var(--i)*00.4s);
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: large;
      }
- 
